@@ -13,6 +13,9 @@ function btnClicked() {
   let d3Limit = +document.getElementById('d3-limit').value;
 
   // Calculate & Output Ticket Types
+  document.getElementById('d1-ticket').innerHTML = d1Ticket;
+  document.getElementById('d2-ticket').innerHTML = d1Ticket;
+  document.getElementById('d3-ticket').innerHTML = d1Ticket;
   // Driver 1
   let d1Ticket;
   if (d1Speed > d1Limit + 40) {
