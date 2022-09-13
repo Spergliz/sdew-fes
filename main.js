@@ -13,11 +13,11 @@ function btnClicked() {
   let d3Limit = +document.getElementById('d3-limit').value;
 
   // Calculate & Output Ticket Types
-  document.getElementById('d1-ticket').innerHTML = Ticket(Ticket);
-  document.getElementById('d2-ticket').innerHTML = Ticket(Ticket);
-  document.getElementById('d3-ticket').innerHTML = Ticket(Ticket);
+  document.getElementById('d1-ticket').innerHTML = getTicket(d1Speed,d1Limit);
+  document.getElementById('d2-ticket').innerHTML = getTicket(d2Speed.d2Limit);
+  document.getElementById('d3-ticket').innerHTML = getTicket(d3Speed,d3Limit);
 }
-function Ticket(){
+function getTicket(Speed,Limit){
   let Ticket;
   if (Speed > Limit + 40) {
     Ticket = 'Really Big Ticket';
