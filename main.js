@@ -13,9 +13,9 @@ function btnClicked() {
   let d3Limit = +document.getElementById('d3-limit').value;
 
   // Calculate & Output Ticket Types
-  document.getElementById('d1-ticket').innerHTML = Ticket(d1Ticket);
-  document.getElementById('d2-ticket').innerHTML = Ticket(d2Ticket);
-  document.getElementById('d3-ticket').innerHTML = Ticket(d3Ticket);
+  document.getElementById('d1-ticket').innerHTML = Ticket(Ticket);
+  document.getElementById('d2-ticket').innerHTML = Ticket(Ticket);
+  document.getElementById('d3-ticket').innerHTML = Ticket(Ticket);
 }
 function Ticket(){
   let Ticket;
